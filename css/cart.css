@@ -1,0 +1,23 @@
+nav {
+ 
+}
+h1 {
+  color: #000000;
+}
+.cart {
+  box-shadow: 0 0 5px #DDD;
+  padding: 60px;
+  width: 1000px;
+  padding-right: 100px;
+  margin-right: 400px;
+}
+.tiny {
+  background-color: #ff6d34;
+  border-radius: 50px;
+  width: 290px;
+  height: 40px;
+}
+#clear:hover {
+  background-color: #ff6d34;
+  color: #fff;
+}

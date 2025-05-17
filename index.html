@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuneBelle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><h1>LuneBelle</h1></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="description.html" class="active">Главная</a></li>
+                <li><a href="cart.html">Каталог</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <span id="userLogin"></span>
+            <button id="logout">Выйти</button>
+        </div>
+    </header>
+
+    <main>
+        <form name="authForm" novalidate>
+            <h2>Авторизация</h2>
+            <label for="login">Логин (4-10 символов, русские буквы и цифры)</label>
+            <input type="text" id="login" name="login" pattern="[А-Яа-я0-9]{4,10}" required>
+            <p id="loginError" class="error"></p>
+
+            <label for="birthdate">Дата рождения</label>
+            <input type="date" id="birthdate" name="birthdate" min="1950-01-01" max="2023-10-01" required>
+            <p id="birthdateError" class="error"></p>
+
+            <label>Пол</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Мужской" required> Мужской</label>
+                <label><input type="radio" name="gender" value="Женский"> Женский</label>
+            </div>
+            <p id="genderError" class="error"></p>
+
+            <button type="submit">Войти</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Контакты: <a href="#">Телефон</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+            <p>&copy; 2025. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
